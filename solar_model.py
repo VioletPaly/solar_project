@@ -2,10 +2,11 @@
 # license: GPLv3
 
 gravitational_constant = 6.67408E-11
+G=gravitational_constant
 """Гравитационная постоянная Ньютона G"""
 
 
-def calculate_force(body, space_objects):
+def calculate_force(body, space_objects, physical_time):
     """Вычисляет силу, действующую на тело.
 
     Параметры:
@@ -32,7 +33,7 @@ def calculate_force(body, space_objects):
 
 
 def move_space_object(body, dt):
-   
+
 
     ax = body.Fx/body.m
     body.x += body.Vx*dt + ax*dt*dt/2
