@@ -63,7 +63,7 @@ def create_star_image(space, star):
 
     Параметры:
 
-    **space** — холст для рисован
+    **space** — холст для рисова
     **star** — объект звезды.
     """
 
